@@ -2,10 +2,8 @@ import HamburgerMenu from "@/components/Navbar/HamburgerMenu";
 import Logo from "@/components/Navbar/Logo";
 import NavbarMiddle from "@/components/Navbar/NavbarMiddle";
 import ProfileDropdown from "@/components/Navbar/ProfileDropdown";
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { Disclosure, DisclosureButton } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-import Link from "next/link";
 
 const navigation = [
     { name: "Dashboard", href: "#", current: true },
@@ -14,7 +12,7 @@ const navigation = [
     { name: "Calendar", href: "#", current: false },
 ];
 
-export default function Example() {
+export default function Navbar() {
     return (
         <Disclosure as="nav" className="bg-gray-800">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
